@@ -7,11 +7,11 @@ from pyathena.error import *  # noqa
 if TYPE_CHECKING:
     from pyathena.connection import Connection
 
-__version__: str = "2.14.0"
+__version__: str = "2.15.0"
 
 # Globals https://www.python.org/dev/peps/pep-0249/#globals
 apilevel: str = "2.0"
-threadsafety: int = 3
+threadsafety: int = 2
 paramstyle: str = "pyformat"
 
 
