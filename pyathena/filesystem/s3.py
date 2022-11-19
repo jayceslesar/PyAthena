@@ -273,7 +273,7 @@ class S3FileSystem(AbstractFileSystem):
         key: str,
         ranges: Tuple[int, int],
         version_id: Optional[str] = None,
-        kwargs: Dict[Any, Any] = None,
+        kwargs: Optional[Dict[Any, Any]] = None,
     ) -> Tuple[int, bytes]:
         range_ = f"bytes={ranges[0]}-{ranges[1]}"
         request = {"Bucket": bucket, "Key": key, "Range": range_}
